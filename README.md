@@ -25,7 +25,8 @@ namespace OOPEngine
 
         static void Main(string[] args)
         {
-            // This is the driver of the game, which will perform updates and rendering behind the scenes 
+            // This is the driver of the game, which will perform updates and rendering behind the scenes.
+            // Here we pass in our window data and an instance of Game, which allows the game engine to work
             GameContainer gc = new GameContainer(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE, new Game(), clearColor);
             gc.Run();
         }
@@ -42,9 +43,10 @@ namespace OOPEngine
             // Load the texture. Note that the base/root path is where your OOPEngine.exe file is.
             githubTexture = new Texture("github.png");
             
-            // 
+            // Initialize githubSprite and set its texture to githubTexture
             githubSprite = new Sprite(githubTexture);
-
+            
+            // Set githubSprite's position to the center of the screen
             githubSprite.Position = new Vector2f(Program.WINDOW_WIDTH / 4f, Program.WINDOW_HEIGHT / 4f);
         }
 
