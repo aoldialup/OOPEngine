@@ -4,16 +4,20 @@ namespace OOPEngine
 {
     class Program
     {
+        public const int WINDOW_WIDTH = 800;
+        public const int WINDOW_HEIGHT = 600;
+        public const string WINDOW_TITLE = "Game";
+        public static readonly Color clearColor = Color.Black;
+
         static void Main(string[] args)
         {
-            GameContainer gc = new GameContainer(800, 600, "Game", new Game(), Color.Black);
+            GameContainer gc = new GameContainer(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE, new Game(), clearColor);
             gc.Run();
         }
     }
 
     class Game : IGame
     {
-
         public void LoadContent(GameContainer gc)
         {
 
