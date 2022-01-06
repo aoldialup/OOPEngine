@@ -2,7 +2,7 @@
 Simple OOP-based game engine made in SFML.Net.
 
 
-This game keeps things simple and provides an interface to do all of your game development in one file.
+This game engine keeps things simple and provides an interface to do all of your game development in one file.
 
 
 ```cs
